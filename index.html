@@ -1,0 +1,21 @@
+<button onclick="switchLanguage()">EN / 中文</button>
+
+<h1 id="title">Hi, I'm Xinyu</h1>
+<p id="intro">Welcome to my personal portfolio.</p>
+
+<script>
+  let language = "en";
+
+  function switchLanguage() {
+    if (language === "en") {
+      document.getElementById("title").textContent = "你好，我是 Xinyu";
+      document.getElementById("intro").textContent = "欢迎来到我的个人作品集。";
+      language = "zh";
+    } else {
+      document.getElementById("title").textContent = "Hi, I'm Xinyu";
+      document.getElementById("intro").textContent =
+        "Welcome to my personal portfolio.";
+      language = "en";
+    }
+  }
+</script>
