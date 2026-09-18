@@ -1,35 +1,18 @@
-<button onclick="switchLanguage()">EN / 中文</button>
+<nav>
+  <a id="nav-home" href="#home">Home</a>
+  <a id="nav-about" href="#about">About</a>
+  <a id="nav-projects" href="#projects">Projects</a>
+  <a id="nav-contact" href="#contact">Contact</a>
 
-<h1 id="title">Hi, I'm Xinyu</h1>
-<p id="intro">Welcome to my personal portfolio.</p>
+  <button onclick="switchLanguage()">EN / 中文</button>
+</nav>
 
-<script>
-  let language = "en";
 
-  function switchLanguage() {
-    if (language === "en") {
-      document.getElementById("title").textContent = "你好，我是 Xinyu";
-      document.getElementById("intro").textContent = "欢迎来到我的个人作品集。";
+<section id="home">
+  <h1 id="title">Hi, I'm Xinyu</h1>
+  <p id="intro">Welcome to my personal portfolio.</p>
+</section>
 
-      document.getElementById("about-title").textContent = "关于我";
-      document.getElementById("about-text").textContent =
-        "我是一名主修网络安全的计算机科学学生。我对网络安全、软件开发、数据分析以及实际技术解决方案感兴趣。";
-
-      language = "zh";
-
-    } else {
-      document.getElementById("title").textContent = "Hi, I'm Xinyu";
-      document.getElementById("intro").textContent =
-        "Welcome to my personal portfolio.";
-
-      document.getElementById("about-title").textContent = "About Me";
-      document.getElementById("about-text").textContent =
-        "I am a Computer Science student specialising in Cyber Security. I am interested in cybersecurity, software development, data analysis and building practical technology solutions.";
-
-      language = "en";
-    }
-  }
-</script>
 
 <section id="about">
   <h2 id="about-title">About Me</h2>
@@ -40,3 +23,107 @@
     data analysis and building practical technology solutions.
   </p>
 </section>
+
+
+<section id="projects">
+  <h2 id="projects-title">Projects</h2>
+
+  <p>
+    My projects will be added here.
+  </p>
+</section>
+
+
+<section id="contact">
+  <h2 id="contact-title">Contact</h2>
+
+  <p>
+    Contact information will be added here.
+  </p>
+</section>
+
+
+<script>
+  let language = "en";
+
+  function switchLanguage() {
+
+    if (language === "en") {
+
+      document.getElementById("title").textContent =
+        "你好，我是 Xinyu";
+
+      document.getElementById("intro").textContent =
+        "欢迎来到我的个人作品集。";
+
+
+      document.getElementById("about-title").textContent =
+        "关于我";
+
+      document.getElementById("about-text").textContent =
+        "我是一名主修网络安全的计算机科学学生。我对网络安全、软件开发、数据分析以及实际技术解决方案感兴趣。";
+
+
+      document.getElementById("projects-title").textContent =
+        "项目经历";
+
+      document.getElementById("contact-title").textContent =
+        "联系我";
+
+
+      document.getElementById("nav-home").textContent =
+        "首页";
+
+      document.getElementById("nav-about").textContent =
+        "关于我";
+
+      document.getElementById("nav-projects").textContent =
+        "项目";
+
+      document.getElementById("nav-contact").textContent =
+        "联系我";
+
+
+      language = "zh";
+
+    } else {
+
+      document.getElementById("title").textContent =
+        "Hi, I'm Xinyu";
+
+      document.getElementById("intro").textContent =
+        "Welcome to my personal portfolio.";
+
+
+      document.getElementById("about-title").textContent =
+        "About Me";
+
+      document.getElementById("about-text").textContent =
+        "I am a Computer Science student specialising in Cyber Security. I am interested in cybersecurity, software development, data analysis and building practical technology solutions.";
+
+
+      document.getElementById("projects-title").textContent =
+        "Projects";
+
+      document.getElementById("contact-title").textContent =
+        "Contact";
+
+
+      document.getElementById("nav-home").textContent =
+        "Home";
+
+      document.getElementById("nav-about").textContent =
+        "About";
+
+      document.getElementById("nav-projects").textContent =
+        "Projects";
+
+      document.getElementById("nav-contact").textContent =
+        "Contact";
+
+
+      language = "en";
+    }
+
+  }
+</script>
