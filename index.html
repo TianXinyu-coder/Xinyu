@@ -10,12 +10,33 @@
     if (language === "en") {
       document.getElementById("title").textContent = "你好，我是 Xinyu";
       document.getElementById("intro").textContent = "欢迎来到我的个人作品集。";
+
+      document.getElementById("about-title").textContent = "关于我";
+      document.getElementById("about-text").textContent =
+        "我是一名主修网络安全的计算机科学学生。我对网络安全、软件开发、数据分析以及实际技术解决方案感兴趣。";
+
       language = "zh";
+
     } else {
       document.getElementById("title").textContent = "Hi, I'm Xinyu";
       document.getElementById("intro").textContent =
         "Welcome to my personal portfolio.";
+
+      document.getElementById("about-title").textContent = "About Me";
+      document.getElementById("about-text").textContent =
+        "I am a Computer Science student specialising in Cyber Security. I am interested in cybersecurity, software development, data analysis and building practical technology solutions.";
+
       language = "en";
     }
   }
 </script>
+
+<section id="about">
+  <h2 id="about-title">About Me</h2>
+
+  <p id="about-text">
+    I am a Computer Science student specialising in Cyber Security.
+    I am interested in cybersecurity, software development,
+    data analysis and building practical technology solutions.
+  </p>
+</section>
